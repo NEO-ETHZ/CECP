@@ -1,0 +1,13 @@
+[project]
+name = "cecp"
+version = "0.1.0"
+description = " Concurrent electrical characterisation platform for the integration of ferroelectric oxides with complex oxides. "
+authors = [
+    {name = "Anwesha Panda", email = "pandaa@ethz.ch"},
+	{name = "Alexander Flasby", email = "flasbya@ethz.ch"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "gdstk>=0.9.60",
+]
