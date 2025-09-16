@@ -8,18 +8,18 @@ from importlib import resources as impresources
 
 import gdstk
 
-from NDL.devices import FeCAP, FeFET, HallBar, profiles, metal_lines ##################
-from NDL.devices.FeCAP import FeCAP_test_str, FeCAP_small ################## , FeCAP_design4, FeCAP_design6
-from NDL.devices.HallBar import HallBar_design4, HallBar_design6 ##################
-from NDL.devices.FeFET import FeFET_design4, FeFET_design6 ##################
-from NDL.devices.profiles import profiles
-from NDL.devices.metal_lines import MetalLine
-from NDL.format_odrso import Formatter
-from NDL.array import make_rc_array, make_multiparam_array
-from NDL.merge import get_children
+from CECP.devices import FeCAP, FeFET, HallBar, profiles, metal_lines ##################
+from CECP.devices.FeCAP import FeCAP_test_str, FeCAP_small ################## , FeCAP_design4, FeCAP_design6
+from CECP.devices.HallBar import HallBar_design4, HallBar_design6 ##################
+from CECP.devices.FeFET import FeFET_design4, FeFET_design6 ##################
+from CECP.devices.profiles import profiles
+from CECP.devices.metal_lines import MetalLine
+from CECP.format_odrso import Formatter
+from CECP.array import make_rc_array, make_multiparam_array
+from CECP.merge import get_children
 
-from NDL import merge
-from NDL import templates
+from CECP import merge
+from CECP import templates
 
 layer_map = {
     "MET_CH_1":     Formatter(1, 0, 1, 0, 0),
@@ -338,6 +338,7 @@ _ = top.add(
 
 # === Final Write ===
 templ_lib.write_gds("1x1_Layout.gds")
+
 
 
 
