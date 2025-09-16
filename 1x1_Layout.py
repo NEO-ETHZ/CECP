@@ -14,7 +14,7 @@ from CECP.devices.HallBar import HallBar_design4, HallBar_design6 ##############
 from CECP.devices.FeFET import FeFET_design4, FeFET_design6 ##################
 from CECP.devices.profiles import profiles
 from CECP.devices.metal_lines import MetalLine
-from CECP.format_odrso import Formatter
+from CECP.format import Formatter
 from CECP.array import make_rc_array, make_multiparam_array
 from CECP.merge import get_children
 
@@ -338,6 +338,7 @@ _ = top.add(
 
 # === Final Write ===
 templ_lib.write_gds("1x1_Layout.gds")
+
 
 
 
