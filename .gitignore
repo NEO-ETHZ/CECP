@@ -12,5 +12,5 @@ wheels/
 
 # Project specific
 *.gds
-!*/templates/*.gds
+!**/templates*/**/*.gds
 *.json
